@@ -13,4 +13,9 @@ function transferEurToUsd(available, amount, commission) {
         console.log('Сейчас обмен недоступен');
     }
 }
-transferEurToUsd(true, 500, 1.05);
+transferEurToUsd(true, 500, 1.1);
+var departmens = ['dev', 'disign', 'marketing'];
+var departmen = departmens[0];
+console.log(departmen);
+var report = departmens.filter(function (d) { return d !== 'dev'; }).map(function (d) { return "".concat(d, " - done"); });
+console.log(report);
